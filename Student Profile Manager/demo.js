@@ -21,6 +21,26 @@ console.log(student['email']);
 
 
 for (let key in student) {
-    console.log(key,);
-    
+    console.log(key + ': ' + student[key]);
 }
+ 
+const { firstName, email } = student;
+
+const contact = {
+    ["phone" + firstName]: "055-123-4567"
+
+}
+
+const address = {
+    street: "main st",
+    city: "hebron",
+    zip: "12345"
+};
+ const studentwithaddress = {
+    student: "alice",
+    address: address,
+ }
+ console.log(studentwithaddress);
+ console.log(contact);
+ 
+ 
